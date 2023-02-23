@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas OL e UL</title>
+</head>
+<body>
+    <h1>Listas Ordenadas e Não Ordenadas</h1>
+    <h2>Listas Ordenadas OL</h2>
+    <p>São listas em que a ordem importa. Utiliza-se a Tag OL para que o comando já enumere a lista de acordo com a ordem colocada no código. A ordem dos itens é feita pela Tag LI. <em>Por Exemplo:</em> 
+        <OL>
+            <li>Acordar</li>
+            <li>Escovar os dentes</li>
+            <li>Tomar café da manhã</li>
+            <li>Ir trabalhar</li>
+</OL>
+Dentro da Tag OL, caso queira mudar o ícone da lista, o parâmetro TYPE vai oferecer alguns valores para que seja utilizado nas listas.
+<OL type="a">
+        <li>Almoçar</li>
+        <li>Voltar ao trabalho</li>
+        <li>Ir à academia</li>
+        <li>estudar</li>
+        <li>Dormir</li>
+</OL></p>
+<h2>Listas não ordenadas</h2>
+<p>Lista em que a ordem não é importante. É usada a Tag UL para a criação da lista, e a tag LI para a enumeração.</p>
+<Ul>Lista de compras
+    <li>Arroz</li>
+    <li>Feijão</li>
+    <li>Batata</li>
+    <li>Carne</li>
+</Ul>
+<h2>Lista Mista</h2>
+<h3>Juntando Listas</h3>
+<p>Para criar uma lista dentro de um LI, basta criar outro OL dentro da mesma e enumerar com outro LI</p>
+<OL>Carnes
+    <li>Bovinas</li>
+    <li>Suínas</li>
+    <li>Frango</li>
+</OL>
+<p>Caso precise fazer duas listas em que uma complementa a outra, no segundo OL (e subsequentes) colocar o parametro START e no valor usar o <strong>NÚMERO</strong> que deseja continuar a ordem.</p>
+<ol>Lista de compras</ol>
+<ol>Carnes
+<ul><li>Bovina</li> <ol>
+    <li>Picanha</li>
+    <li>Contra-filé</li>
+    <li>Cupim</li></ol>
+</ul>
+<ul> <li>Suína</li> <ol start="4">
+    <li>Pernil</li>
+    <li>Orelha</li>
+    <li>Linguíça</li>
+</ol></ul>
+<ul><li>Frango</li> <ol start="7">
+    <li>Peito</li>
+    <li>Coxa</li>
+    <li>Asa</li>
+</ul></ol>
+
+<h3>Lista de Compras</h3>
+<ol>Carnes
+    <ol><li>Bovinas</li>
+    <ul><li>Picanha</li>
+    <li>Alcatra</li>
+    <li>Maminha</li></ul></ol>
+
+    <ol start="2"><li>Suínas</li>
+    <ul><li>Picanha</li>
+        <li>Pernil</li>
+        <li>Orelha</li></ul></ol>
+
+    <ol start="3"><li>Frango</li>
+    <ul><li>Peito</li>
+    <li>Coxa</li> 
+    <li>Asa</li>
+</ul></ol>
+
+</ol>
+</Ul>
+
+<h2>Lista de definições</h2>
+<p>DT = Termo <br>
+DD = Definição <br>
+DL = criar a lista de definição</p>
+<dl>
+    <dt>HTML</dt>
+    <dd>Linguagem de marcação para a criação do conteudo de um site.</dd>
+    <dt>CSS</dt>
+    <dd>Linguagem de marcação para a criação do design de um site.</dd>
+    <dt>JavaScript</dt>
+    <dd>Linguagem de programação para a criação de interatividade de um site.</dd>
+    <dt>ALT+Click</dt>
+    <dd>Escolhe multiplas áreas para digitar ou apagar no texto.</dd>
+</dl>
+    
+</body>
+</html>

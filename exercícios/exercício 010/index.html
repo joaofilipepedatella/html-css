@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links</title>
+</head>
+<body>
+    <h1>usando links externos</h1>
+    <p>Você pode acessar um <a href="http://www.xvideos.com">vídeo repositor de energias saudáveis</a></p>
+    <p>Mas para ter um efeito supremo, é melhor acessar <a href="http://www.pornhub.com" target="_blank" rel="external">locais melhores</a>, mesmo que pagos</p>
+    
+    <p>âncora = hyperlink</p>
+    <p>A Tag A &lt;a&gt; é utilizada para criar a âncora. <br>
+    Nela possui o Parâmetro href onde você coloca a URL no local do valor, site esse que será encaminhado após o click.</p>
+    <p><em>Por exemplo: <br></em>
+    <code>&lt;a href="http://www.youtube.com/"&gt;</code></p>
+    <p>Caso queira que a pessoa que clicar no link ancorado abra uma nova janela, dentro da tag A, após o href, você deve adicionar os pares de Parâmetro-Valor: <br>
+    target=_"blank" <br>
+    rel="external" <br>
+    Assim o cliente que clicar no hyperlink, abre uma nova página, sem sair da principal que ele já está.</p>
+    <p><em>Por exemplo:</em> <br>
+    <code>&lt;a href="http://www.youtube.com/" target="_blank" rel="external"&gt;</code></p>
+    <h1>Usando links internos</h1>
+    <p>Para acessar uma página diferente dentro do próprio site, você precisa criar um segundo arquivo no VSCode. <br>
+    A tag continua sendo o &lt;a&gt;, porém o parâmetro href será o novo arquivo que você criou para a página a ser acessada. Por exemplo: <br>
+&lt;a href="pagina002.html" target="self" rel="next"&gt;</p>
+
+<p>Clique <a href="pagina002.html" rel="next">Aqui</a> para acessar a Página 002</p>
+<p>Clique <a href="noticias/pagina003.html" rel="next">Aqui</a> para acessar a Página 003 que está dentro da pasta Notícias</p>
+<p>o parâmetro "target" não é obrigatório, pois está no mesmo site, a menos que queira abrir uma aba separada, usando o _blank como valor.</p>
+<p>Caso a página a ser acessada esteja em uma outra pasta dentro do projeto, uma subpasta, o caminho em href deve ser completado para o acesso ser concluído, por exemplo: <br>
+&lt;a href="noticias/pagina002.html" target="self" rel="next"&gt;</p>
+<h1>Links de Download</h1>
+<p>Para criar um link de download, você deve criar uma pasta dentro do projeto para armazenar os arquivos a serem baixados</p>
+<p>Criar uma lista para isso pode ser uma boa estética, caso haja mais de um link na página.</p>
+<p>Usar a TAG A normalmente, e no parametro href colocar como valor o caminho do arquivo, mostrando a pasta. <br>
+em alguns casos, o navegador pode abrir um PDF em uma nova aba ao inves de baixá-lo. No site <a href="http://iana.org/" rel="external" target="_blank">iana.org</a> você encontra uma lista de códigos que podem auxiliá-lo com um novo parametro, o TYPE.</p>
+<p>Clique <a href="arquivos/Músicas.rar">Aqui</a> para baixar o .RAR com as músicas.</p>
+
+</body>
+</html>
