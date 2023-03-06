@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrupamento de colunas</title>
+    <style>
+        body {
+
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+
+            border-collapse: collapse;
+        }
+
+        thead {
+
+            background-color: gray;
+            color: white;
+        }
+
+        th, td {
+
+            border: 1px solid black;
+            padding: 5px 10px 5px 10px;
+        }
+
+        .cnome {
+            background-color: rgba(172, 172, 172, 0.76);
+        }
+              
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprofissao">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>nome</th>
+                <th>sexo</th>
+                <th>idade</th>
+                <th>profissão</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Maria</td> 
+                <td>F</td>
+                <td>28</td>
+                <td>médica</td>
+            </tr>
+            <tr>
+                <td>João</td> 
+                <td>M</td> 
+                <td>33</td>
+                <td>programador</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>
